@@ -20,6 +20,10 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    active-model-adapter-source (2.1.1)
+      ember-data-source (>= 1.13, < 3.0)
+    active_model_serializers (0.9.5)
+      activemodel (>= 3.2)
     activejob (4.2.5.1)
       activesupport (= 4.2.5.1)
       globalid (>= 0.3.0)
@@ -39,7 +43,12 @@ GEM
     arel (6.0.3)
     builder (3.2.2)
     concurrent-ruby (1.0.2)
+    ember-data-source (2.6.1)
+      ember-source (>= 2, < 3.0)
+    ember-source (2.6.0)
     erubis (2.7.0)
+    faker (1.6.5)
+      i18n (~> 0.5)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -59,6 +68,7 @@ GEM
     pg (0.18.4)
     pkg-config (1.1.7)
     rack (1.6.4)
+    rack-cors (0.4.0)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.5.1)
@@ -106,7 +116,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active-model-adapter-source
+  active_model_serializers (~> 0.9.4)
+  faker
   pg
+  rack-cors
   rails (= 4.2.5.1)
   rails-api
   spring
